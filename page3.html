@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Page 3 background styling */
+        #page3 {
+            background-image: url('images/page3-bg.png'); /* Path to your page3 background image */
+            background-size: cover; /* Ensure the image covers the entire screen */
+            background-position: top center; /* Background will start from the top center */
+            height: 100vh; /* Full height of the viewport */
+            color: white;
+            position: relative; /* Allows positioning the buttons inside */
+        }
+
+        /* Container for the 3 buttons */
+        .button-container {
+            position: absolute;
+            top: 50%; /* Center the buttons vertically */
+            left: 50%; /* Center the buttons horizontally */
+            transform: translate(-50%, -50%); /* Correct the position to fully center */
+            display: flex;
+            gap: 20px; /* Space between the buttons */
+        }
+
+        /* Styling for the buttons */
+        .button {
+            background-color: transparent;
+            background-repeat: no-repeat;
+            background-size: cover; /* Ensure the image fits inside the button */
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+            transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* Button styling for message, photos, and journey */
+        .button-message {
+            width: 150px; /* Set the width of the buttons */
+            height: 150px; /* Set the height of the buttons */
+            background-image: url('images/button-message.png'); /* Path to your message button image */
+        }
+
+        .button-photos {
+            width: 150px; /* Set the width of the buttons */
+            height: 150px; /* Set the height of the buttons */
+            background-image: url('images/button-photos.png'); /* Path to your photos button image */
+        }
+
+        .button-journey {
+            width: 150px; /* Set the width of the buttons */
+            height: 150px; /* Set the height of the buttons */
+            background-image: url('images/button-journey.png'); /* Path to your journey button image */
+        }
+
+        /* Hover effect for buttons */
+        .button:hover {
+            opacity: 0.8; /* Make the button slightly transparent */
+            transform: scale(1.1); /* Slightly enlarge the button on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <section id="page3">
+        <!-- Container for the 3 buttons -->
+        <div class="button-container">
+            <!-- Link each button to the corresponding page -->
+            <a href="page4.html" class="button button-message"></a> <!-- Message button -->
+            <a href="page5.html" class="button button-photos"></a> <!-- Photos button -->
+            <a href="page6.html" class="button button-journey"></a> <!-- Journey button -->
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Page 5 background styling */
+        #page5 {
+            background-image: url('images/page5-bg.png'); /* Path to your page5 background image */
+            background-size: cover; /* Ensure the image covers the entire screen */
+            background-position: top center; /* Background will start from the top center */
+            height: 100vh; /* Full height of the viewport */
+            color: white;
+            position: relative; /* Allows positioning the buttons inside */
+        }
+
+        /* Back button styling */
+        .back-button {
+            position: absolute;
+            top: 20px; /* Position the button 20px from the top */
+            left: 20px; /* Position the button 20px from the left */
+            width: 275px; /* Set the width of the back button */
+            height: 85px; /* Set the height of the back button */
+            background-image: url('images/button-back.png'); /* Path to your back button image */
+            background-size: cover; /* Ensure the image fits the button */
+            background-repeat: no-repeat;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* Hover effect for the back button */
+        .back-button:hover {
+            opacity: 0.8; /* Slight transparency on hover */
+            transform: scale(1.1); /* Slightly enlarge the button on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <section id="page5">
+        <!-- Back button positioned on the top left corner -->
+        <a href="page3.html" class="back-button"></a> <!-- Back button -->
+    </section>
+
+</body>
+</html>

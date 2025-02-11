@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Main page background styling */
+        #main-page {
+            background-image: url('images/main-page-bg.png'); /* Your background image */
+            background-size: cover; /* Make sure the image covers the entire screen */
+            background-position: top center; /* Background will start from the top center */
+            height: 100vh; /* Full height of the viewport */
+            color: white;
+            position: relative; /* Allows for positioning the buttons inside */
+        }
+
+        /* Container to hold YES and NO buttons */
+        .button-container {
+            position: absolute;
+            bottom: 5%; /* Position buttons 5% from the bottom of the page */
+            left: 50%; /* Center buttons horizontally */
+            transform: translateX(-50%); /* Center buttons horizontally */
+            display: flex;
+            gap: 80px; /* Space between the buttons */
+        }
+
+        /* Style for YES and NO buttons */
+        .button {
+            width: 275px; /* Set the width of the buttons */
+            height: 85px; /* Set the height of the buttons */
+            background-color: transparent;
+            background-repeat: no-repeat;
+            background-size: cover; /* Ensure the background image covers the button's size */
+            border: none;
+            cursor: pointer;
+        }
+
+        /* YES button styling */
+        .button-yes {
+            background-image: url('images/button-yes.png'); /* Path to your YES button image */
+        }
+
+        /* NO button styling */
+        .button-no {
+            background-image: url('images/button-no.png'); /* Path to your NO button image */
+        }
+    </style>
+</head>
+<body>
+
+    <section id="main-page">
+        <div class="button-container">
+            <a href="page2.html" class="button button-yes"></a> <!-- YES button linking to page2.html -->
+            <a href="page7.html" class="button button-no"></a> <!-- NO button -->
+        </div>
+    </section>
+
+</body>
+</html>

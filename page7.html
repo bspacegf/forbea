@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Page 7 background styling */
+        #page7 {
+            background-image: url('images/page7-bg.png'); /* Path to your page7 background image */
+            background-size: cover; /* Ensure the image covers the entire screen */
+            background-position: top center; /* Background will start from the top center */
+            height: 100vh; /* Full height of the viewport */
+            color: white;
+            position: relative; /* Allows positioning the buttons inside */
+        }
+
+        /* Start Again button styling */
+        .start-again-button {
+            position: absolute;
+            bottom: 100px; /* Position the button 20px from the bottom */
+            right: 100px; /* Position the button 20px from the right */
+            width: 275px; /* Set the width of the Start Again button */
+            height: 85px; /* Set the height of the Start Again button */
+            background-image: url('images/button-startagain.png'); /* Path to your start again button image */
+            background-size: cover; /* Ensure the image fits the button */
+            background-repeat: no-repeat;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* Hover effect for the Start Again button */
+        .start-again-button:hover {
+            opacity: 0.8; /* Slight transparency on hover */
+            transform: scale(1.1); /* Slightly enlarge the button on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <section id="page7">
+        <!-- Start Again button positioned on the bottom right -->
+        <a href="index.html" class="start-again-button"></a> <!-- Start Again button links to the main page -->
+    </section>
+
+</body>
+</html>

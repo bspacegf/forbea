@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Page 2 background styling */
+        #page2 {
+            background-image: url('images/page2-bg.png'); /* Path to your page2 background image */
+            background-size: cover; /* Ensure the image covers the entire screen */
+            background-position: top center; /* Background will start from the top center */
+            height: 100vh; /* Full height of the viewport */
+            color: white;
+            position: relative; /* Allows positioning the button inside */
+        }
+
+        /* Container for the Next button */
+        .button-container {
+            position: absolute;
+            bottom: 5%; /* Position button 5% from the bottom of the screen */
+            right: 5%; /* Position button 5% from the right edge of the screen */
+            z-index: 10; /* Ensure it is in front of other elements */
+        }
+
+        /* Styling for the button */
+        .button {
+            background-color: transparent;
+            background-repeat: no-repeat;
+            background-size: cover; /* Ensure the image fits the button */
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        /* NEXT button styling */
+        .button-next {
+            width: 275px; /* Set the width of the button */
+            height: 85px; /* Set the height of the button */
+            background-image: url('images/button-next.png'); /* Path to your NEXT button image */
+            background-size: contain; /* Ensure the image fits inside the button */
+        }
+
+    </style>
+</head>
+<body>
+
+    <section id="page2">
+        <div class="button-container">
+            <!-- NEXT button linked to page3.html -->
+            <a href="page3.html" class="button button-next"></a>
+        </div>
+    </section>
+
+</body>
+</html>
